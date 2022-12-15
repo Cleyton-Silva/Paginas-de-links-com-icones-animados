@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family= Poppins :ital,wght@1,100 & display=swap');
+
+:root {
+    --cor_primaria-body: #FAF7FD;
+    --cor_hover-link: #efebf3;
+    --purple: #BB99DD;
+
+    --font-link: url('https://fonts.googleapis.com/css2?family= Poppins :ital,wght@1,100 & display=swap');
+    ;
+
+}
+
+* {
+
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+body {
+
+
+
+
+
+    font-family: var(--font-link);
+
+    Font: 300, 600;
+    width: 100vw;
+    height: 100vh;
+
+    overflow: hidden;
+
+
+}
+
+main {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: var(--cor_primaria-body);
+}
+
+.foto {
+    width: 90%;
+    height: 100px;
+
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.foto img {
+    background-image: url(img/Cleyton.jpg);
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+    background-size: 90%;
+    background-position: 20%;
+    border-radius: 50%;
+
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+}
+
+button:focus {
+    outline: solid #a871de;
+    border: solid 2px #FAF7FD;
+}
+
+button:hover {
+
+
+    outline: solid #7c25ce;
+    border: solid 2px #FAF7FD;
+    transition: 1ms;
+
+
+}
+
+.icones {
+    width: 90%;
+    height: 80px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icones ul {
+    list-style: none;
+}
+
+.icones ul li {
+    display: inline-block;
+    margin: 5px;
+    margin-top: 40%;
+}
+
+.icones ul li img {
+    width: 30px;
+    height: 50px;
+}
+
+.social-link {
+    width: 50%;
+    height: 100%;
+    margin-top: 150px;
+
+    top: 7%;
+
+}
+
+.social-link ul {
+    list-style: none;
+}
+
+.social-link ul li {
+    margin-bottom: 20px;
+    margin: 7px;
+    margin-top: 5%;
+
+}
+
+.social-link ul li button {
+    width: 100%;
+    height: 60px;
+
+    border-radius: 8px;
+    background: var(--purple);
+    color: #FAF7FD;
+    font-size: 1.1rem;
+
+
+}
+
+.icones-3D{
+
+    
+
+    
+    display: flex;
+
+    top: 240px;
+    left: 25%;
+    width: 20%;
+    position: absolute;
+
+     
+    
+}
+
+.icones-3D ul {
+
+    
+    position: relative;
+    display: flex;
+    transform-style: preserve-3d;
+    transform: rotate(-25deg) skew(25deg);
+    
+}
+
+.icones-3D ul li {
+
+    
+
+    
+    position: relative;
+    list-style: none;
+    width: 50px;
+    height: 60px;
+    margin: 20px;
+    
+
+
+}
+
+.icones-3D ul li:before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background:var(--purple);
+    transform-origin: top;
+    transform: skewX(-41deg);
+}
+
+.icones-3D ul li:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -9px;
+    width: 9px;
+    height: 100%;
+    background: var(--purple);
+    transform-origin: right;
+    transform: skewY(-49deg);
+    
+}
+
+
+
+.icones-3D ul li span {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fdfdfd;;
+    color: rgba(255, 255, 255, 0, 2);
+    font-size: 30px !important;
+}
+
+.icones-3D ul li :hover span {
+    z-index: 1000;
+    transition: 0.5s;
+    color: rgb(249, 246, 246);
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 05);
+}
+
+.icones-3D ul li:hover span:nth-child(5) {
+
+    transform: translate(40px, -40px);
+    opacity: 1;
+
+}
+
+.icones-3D ul li:hover span:nth-child(4) {
+
+    transform: translate(30px, -30px);
+    opacity: 0.8;
+
+}
+
+.icones-3D ul li:hover span:nth-child(3) {
+
+    transform: translate(20px, -20px);
+    opacity: 0.6;
+
+}
+
+.icones-3D ul li:hover span:nth-child(2) {
+
+    transform: translate(10px, -10px);
+    opacity: 0.4;
+
+}
+
+.icones-3D ul li:hover span:nth-child(1) {
+
+    transform: translate(0px, 0px);
+    opacity: 0.2;
+
+}
+
+/* cores */
+
+#ins:hover span {
+
+    background:  #e4405f;
+
+}
+
+#twi:hover span {
+
+    background: #63b9fb;
+
+}
+
+#git:hover span {
+
+    background: rgb(120, 50, 120);
+
+}
+
+#lin:hover span {
+
+    background: #0077b5;
+
+}
+
+
+
+
